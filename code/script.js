@@ -13,7 +13,7 @@ const body = document.getElementById("body")
     .then((res) => res.json())
     .then((json) => {
         
-        console.log(json.main.temp)
+        // console.log(json.main.temp)
 
         const celcius= Math.floor((json.main.temp - 273.15)) // convert kelvin to celcius
         
@@ -69,7 +69,7 @@ const body = document.getElementById("body")
     fetch(API_URLF)
     .then((res) => res.json())
     .then((data) => {
-        console.log('data', data)
+        // console.log('data', data)
         const filteredForecast = data.list.filter((item) =>
          item.dt_txt.includes("12:00")
          );
